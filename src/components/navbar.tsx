@@ -7,51 +7,51 @@ import { Box, Flex, styled } from 'leather-styles/jsx';
 import { token } from 'leather-styles/tokens';
 import { useHover } from 'use-events';
 
-import { openExternalLink } from '@utils/external-links';
+// import { openExternalLink } from '@utils/external-links';
 import { truncateMiddle } from '@utils/tx-utils';
 
 import Logo from '../assets/images/logo.svg';
 import { useAuth } from './auth-provider/auth-provider';
 import { NetworkInfo } from './network-info';
 
-interface NavItemProps {
-  href: string;
-  children: React.ReactNode;
-  openInNewTab?: boolean;
-  isActive?: boolean;
-}
+// interface NavItemProps {
+//   href: string;
+//   children: React.ReactNode;
+//   openInNewTab?: boolean;
+//   isActive?: boolean;
+// }
+//
+// const navItemStyles = css({
+//   color: token('colors.ink.background-primary'),
+//   cursor: 'pointer',
+//   textDecoration: 'none',
+//   _hover: {
+//     textDecoration: 'underline',
+//   },
+// });
 
-const navItemStyles = css({
-  color: token('colors.ink.background-primary'),
-  cursor: 'pointer',
-  textDecoration: 'none',
-  _hover: {
-    textDecoration: 'underline',
-  },
-});
-
-function NavItem({ href, children, openInNewTab = false, isActive = false }: NavItemProps) {
-  return (
-    <styled.a
-      color="ink.background-primary"
-      href={href}
-      className={navItemStyles}
-      target={openInNewTab ? '_blank' : undefined}
-      rel={openInNewTab ? 'noopener noreferrer' : undefined}
-      textDecoration={isActive ? 'underline' : 'none'}
-      onClick={
-        openInNewTab
-          ? e => {
-              e.preventDefault();
-              openExternalLink(href);
-            }
-          : undefined
-      }
-    >
-      {children}
-    </styled.a>
-  );
-}
+// function NavItem({ href, children, openInNewTab = false, isActive = false }: NavItemProps) {
+//   return (
+//     <styled.a
+//       color="ink.background-primary"
+//       href={href}
+//       className={navItemStyles}
+//       target={openInNewTab ? '_blank' : undefined}
+//       rel={openInNewTab ? 'noopener noreferrer' : undefined}
+//       textDecoration={isActive ? 'underline' : 'none'}
+//       onClick={
+//         openInNewTab
+//           ? e => {
+//               e.preventDefault();
+//               openExternalLink(href);
+//             }
+//           : undefined
+//       }
+//     >
+//       {children}
+//     </styled.a>
+//   );
+// }
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -93,7 +93,7 @@ export function Navbar() {
               <NavbarLeft />
 
               <Box display={{ base: 'none', lg: 'block' }} flex={1}>
-                <NavLinks />
+                {/*<NavLinks />*/}
               </Box>
 
               <Flex gap="space.04" alignItems="center" ml={{ lg: 'space.06' }}>
@@ -171,7 +171,7 @@ export function Navbar() {
         backdropFilter="blur(4px)"
       >
         <Flex flexDirection="column" gap="space.04" p="space.06" height="100%">
-          <NavLinks />
+          {/*<NavLinks />*/}
         </Flex>
       </Box>
     </>
@@ -182,11 +182,7 @@ const NavbarLeft = () => {
   return (
     <Flex alignItems="center">
       <styled.a
-        href="https://leather.io"
-        onClick={e => {
-          e.preventDefault();
-          window.location.href = 'https://leather.io';
-        }}
+        href="/"
       >
         <Flex alignItems="center">
           <Logo />
@@ -196,23 +192,23 @@ const NavbarLeft = () => {
   );
 };
 
-const NavLinks = () => {
-  return (
-    <Flex
-      flex="1"
-      flexDirection={{ base: 'column', lg: 'row' }}
-      justify={{ lg: 'flex-end' }}
-      alignItems={{ base: 'flex-start', lg: 'center' }}
-      gap="space.05"
-    >
-      <NavItem href="https://earn.leather.io/" isActive>
-        Earn
-      </NavItem>
-      <NavItem href="https://leather.io/blog">Blog</NavItem>
-      <NavItem href="https://leather.io/learn">Learn</NavItem>
-      <NavItem href="https://leather.io/guides">Guides</NavItem>
-      <NavItem href="https://leather.io/developer-docs">Developer docs</NavItem>
-      <NavItem href="https://leather.io/frequent-questions#stacking">FAQs</NavItem>
-    </Flex>
-  );
-};
+// const NavLinks = () => {
+//   return (
+//     <Flex
+//       flex="1"
+//       flexDirection={{ base: 'column', lg: 'row' }}
+//       justify={{ lg: 'flex-end' }}
+//       alignItems={{ base: 'flex-start', lg: 'center' }}
+//       gap="space.05"
+//     >
+//       <NavItem href="https://earn.leather.io/" isActive>
+//         Earn
+//       </NavItem>
+//       <NavItem href="https://leather.io/blog">Blog</NavItem>
+//       <NavItem href="https://leather.io/learn">Learn</NavItem>
+//       <NavItem href="https://leather.io/guides">Guides</NavItem>
+//       <NavItem href="https://leather.io/developer-docs">Developer docs</NavItem>
+//       <NavItem href="https://leather.io/frequent-questions#stacking">FAQs</NavItem>
+//     </Flex>
+//   );
+// };

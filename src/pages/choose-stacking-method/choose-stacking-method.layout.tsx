@@ -31,7 +31,6 @@ export function ChooseStackingMethodLayout(props: ChooseStackingMethodLayoutProp
               <Messages {...props} />
             </Box>
           )}
-          <EarnWithSbtcSecion {...props} />
           <StackingSection {...props} />
         </Stack>
       </StartStackingLayout>
@@ -65,7 +64,7 @@ const PageTitle = () => {
           >
             <BTCBall />
           </styled.span>{' '}
-          yield via Leather
+          yield via Asigna
         </styled.h1>
       </styled.section>
       <styled.p my="space.04" textStyle="body.01" fontSize="21px">

@@ -12,6 +12,12 @@ With a recent version of [Node.js 18](https://nodejs.org/de/blog/announcements/v
 pnpm install && pnpm dev
 ```
 
+## Build
+
+```sh
+pnpm build
+```
+
 ## Documentation
 
 This project's documentation can be found in [the `docs` folder](./docs/README.md).

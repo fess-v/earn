@@ -21,7 +21,7 @@ export function StackingDisclaimer() {
       providers. We don&apos;t provide the Stacking service ourselves or operate the protocols that
       provide yield. Read our{' '}
       <ExternalLink href="https://leather.io/guides/stacking">Guide</ExternalLink> and review our{' '}
-      <ExternalLink href="https://leather.io/terms">Terms</ExternalLink> to learn more.
+      <ExternalLink href="https://www.asigna.io/AsignaTermsofUse.pdf">Terms</ExternalLink> to learn more.
     </styled.p>
   );
 }

@@ -45,7 +45,7 @@ export function Footer() {
           color: token('colors.ink.text-primary'),
         }}
         fontWeight={500}
-        href="https://leather.io/terms"
+        href="https://www.asigna.io/AsignaTermsofUse.pdf"
       >
         Terms of Service
       </OpenLinkInNewTab>
@@ -54,7 +54,7 @@ export function Footer() {
           color: token('colors.ink.text-primary'),
         }}
         fontWeight={500}
-        href="https://leather.io/privacy-policy"
+        href="https://www.asigna.io/AsignaPrivacyPolicy.pdf"
       >
         Privacy Policy
       </OpenLinkInNewTab>
