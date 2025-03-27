@@ -45,8 +45,8 @@ importers:
         specifier: 7.0.2
         version: 7.0.2
       '@stacks/connect':
-        specifier: 7.10.0
-        version: 7.10.0
+        specifier: 7.10.2
+        version: 7.10.2
       '@stacks/connect-react':
         specifier: 22.6.1
         version: 22.6.1(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
@@ -2768,6 +2768,9 @@ packages:
 
   '@stacks/connect@7.10.0':
     resolution: {integrity: sha512-h6i/cFWUVWLFyn8Y62+oDh7PJYQR5Ultrc6dEUp8rZZbHO9ldLT5Qm+rwTS0tRXzoPXJ2KNbqsG70Sqa/lRnVQ==}
+
+  '@stacks/connect@7.10.2':
+    resolution: {integrity: sha512-fQcdayBgq9XZnX4rqQxa//Gx9c0ycrmrZT9dZ01uHDlIr/ZxwU18d5A3hyYv4F7LQYQQkFr9htpVTlH0RSqWUw==}
 
   '@stacks/encryption@7.0.2':
     resolution: {integrity: sha512-3evRvxPqVzQAhcZ8uacQrVfAETUMIV8VyKkHGsd4QZroGWlvXQheLV3CFeDttFb304QcKq/oKv1clOvQ2shaAw==}
@@ -11263,6 +11266,20 @@ snapshots:
       '@stencil/core': 2.22.3
 
   '@stacks/connect@7.10.0':
+    dependencies:
+      '@stacks/auth': 7.0.2
+      '@stacks/common': 7.0.2
+      '@stacks/connect-ui': 6.6.0
+      '@stacks/network': 7.0.2
+      '@stacks/network-v6': '@stacks/network@6.17.0'
+      '@stacks/profile': 7.0.2
+      '@stacks/transactions': 7.0.2
+      '@stacks/transactions-v6': '@stacks/transactions@6.17.0'
+      jsontokens: 4.0.1
+    transitivePeerDependencies:
+      - encoding
+
+  '@stacks/connect@7.10.2':
     dependencies:
       '@stacks/auth': 7.0.2
       '@stacks/common': 7.0.2
