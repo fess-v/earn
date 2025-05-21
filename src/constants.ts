@@ -9,11 +9,11 @@ export const DEFAULT_V2_INFO_ENDPOINT = '/v2/info';
 export const APP_DETAILS =
   typeof window !== 'undefined'
     ? {
-        name: 'Leather Earn',
+        name: 'Asigna Earn',
         icon: `${window.location.origin}/logo.svg`,
       }
     : {
-        name: 'Leather Earn - Testing',
+        name: 'Asigna Earn - Testing',
         icon: `/logo.svg`,
       };
 
