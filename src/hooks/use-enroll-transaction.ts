@@ -103,7 +103,9 @@ export function useSbtcEnroll({
               console.log('on cancel');
               onCancel?.();
             },
-          });
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+          }, window.AsignaProvider);
         } catch (e) {
           console.log(e);
         }
